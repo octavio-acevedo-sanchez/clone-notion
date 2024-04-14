@@ -4,6 +4,7 @@ import { type ElementRef, useRef, useState, useEffect } from 'react';
 import {
 	ChevronsLeft,
 	MenuIcon,
+	Plus,
 	PlusCircle,
 	Search,
 	Settings
@@ -147,6 +148,7 @@ export const Navigation = (): React.ReactNode => {
 				</div>
 				<div className='mt-4 '>
 					<DocumentList />
+					<Item onClick={handleCreate} icon={Plus} label='Add a page' />
 				</div>
 				<div
 					onMouseDown={handleMouseDown}
