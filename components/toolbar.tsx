@@ -115,7 +115,7 @@ export const Toolbar = ({
 						</Button>
 					</IconPicker>
 				)}
-				{!initialData.converImage && !preview && (
+				{!initialData.coverImage && !preview && (
 					<Button
 						onClick={coverImage.onOpen}
 						className='text-muted-foreground text-xs'
