@@ -10,6 +10,7 @@ import { api } from '@/convex/_generated/api';
 import { useParams } from 'next/navigation';
 import type { Id } from '@/convex/_generated/dataModel';
 import { useEdgeStore } from '@/lib/edgestore';
+import { Skeleton } from '@/components/ui/skeleton';
 
 interface CoverIMageProps {
 	url?: string;
@@ -69,4 +70,8 @@ export const Cover = ({ url, preview }: CoverIMageProps): React.ReactNode => {
 			)}
 		</div>
 	);
+};
+
+Cover.Skeleton = function CoverSkeleton() {
+	return <Skeleton className='w-full h-[12vh]' />;
 };
